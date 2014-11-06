@@ -29,6 +29,7 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.csfaq.amazonassociatereporting.R;
@@ -129,16 +130,33 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 
         @Override
         public Fragment getItem(int i) {
+        	Fragment fragment = null;
+        	Bundle args = null;
+        	
             switch (i) {
                 case 0:
                     // The first section of the app is the most interesting -- it offers
                     // a launchpad into the other demonstrations in this example application.
                     return new LaunchpadSectionFragment();
 
+                case 1:
+               	 fragment = new RecommendationsSectionFragment();
+                    args = new Bundle();
+                   args.putInt(DummySectionFragment.ARG_SECTION_NUMBER, i + 1);
+                   fragment.setArguments(args);
+                   return fragment;
+               
+                case 2:
+                	 fragment = new WhatsnewSectionFragment();
+                     args = new Bundle();
+                    args.putInt(DummySectionFragment.ARG_SECTION_NUMBER, i + 1);
+                    fragment.setArguments(args);
+                    return fragment;
+                    
                 default:
                     // The other sections of the app are dummy placeholders.
-                    Fragment fragment = new DummySectionFragment();
-                    Bundle args = new Bundle();
+                    fragment = new DummySectionFragment();
+                     args = new Bundle();
                     args.putInt(DummySectionFragment.ARG_SECTION_NUMBER, i + 1);
                     fragment.setArguments(args);
                     return fragment;
@@ -221,7 +239,37 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         }
     }
 
+    public static class WhatsnewSectionFragment extends Fragment {
 
+        public static final String ARG_SECTION_NUMBER = "section_number";
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.fragment_whatsnew, container, false);
+            Bundle args = getArguments();
+            ImageView imageView = (ImageView) rootView.findViewById(R.id.imageView1);
+    		imageView.setImageResource(R.drawable.promo1);
+
+            return rootView;
+        }
+    }
+
+    public static class RecommendationsSectionFragment extends Fragment {
+
+        public static final String ARG_SECTION_NUMBER = "section_number";
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.fragment_recommendations, container, false);
+            Bundle args = getArguments();
+            ImageView imageView = (ImageView) rootView.findViewById(R.id.imageView1);
+    		imageView.setImageResource(R.drawable.reco1);
+
+            return rootView;
+        }
+    }
 
 
 
