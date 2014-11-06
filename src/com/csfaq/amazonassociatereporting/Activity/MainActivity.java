@@ -55,6 +55,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Post the notifications at a random time.
         new Handler().postDelayed(new Runnable() {
 
             @Override
@@ -137,27 +138,27 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
                 case 0:
                     // The first section of the app is the most interesting -- it offers
                     // a launchpad into the other demonstrations in this example application.
-                    return new LaunchpadSectionFragment();
+                    return new HomeFragment();
 
                 case 1:
-               	 fragment = new RecommendationsSectionFragment();
+               	 fragment = new RecommendationsFragment();
                     args = new Bundle();
-                   args.putInt(DummySectionFragment.ARG_SECTION_NUMBER, i + 1);
+                   args.putInt(DidYouKnowFragment.ARG_SECTION_NUMBER, i + 1);
                    fragment.setArguments(args);
                    return fragment;
                
                 case 2:
-                	 fragment = new WhatsnewSectionFragment();
+                	 fragment = new WhatsNewFragment();
                      args = new Bundle();
-                    args.putInt(DummySectionFragment.ARG_SECTION_NUMBER, i + 1);
+                    args.putInt(DidYouKnowFragment.ARG_SECTION_NUMBER, i + 1);
                     fragment.setArguments(args);
                     return fragment;
                     
                 default:
                     // The other sections of the app are dummy placeholders.
-                    fragment = new DummySectionFragment();
+                    fragment = new DidYouKnowFragment();
                      args = new Bundle();
-                    args.putInt(DummySectionFragment.ARG_SECTION_NUMBER, i + 1);
+                    args.putInt(DidYouKnowFragment.ARG_SECTION_NUMBER, i + 1);
                     fragment.setArguments(args);
                     return fragment;
             }
@@ -173,104 +174,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
             String[] tabs = new String[] {"Home","Recommendation","What's new", "Did you know"};
 
             return tabs[position];
-
-            //Resources res = getResources();
-            //String[] planets = getResources().getStringArray(R.array.planets_array);
-
         }
     }
-
-    /**
-     * A fragment that launches other parts of the demo application.
-     */
-    public static class LaunchpadSectionFragment extends Fragment {
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_section_launchpad, container, false);
-
-            // Demonstration of a collection-browsing activity.
-            rootView.findViewById(R.id.demo_collection_button)
-                    .setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            Intent intent = new Intent(getActivity(), CollectionDemoActivity.class);
-                            startActivity(intent);
-                        }
-                    });
-
-            // Demonstration of navigating to external activities.
-            rootView.findViewById(R.id.demo_external_activity)
-                    .setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            // Create an intent that asks the user to pick a photo, but using
-                            // FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET, ensures that relaunching
-                            // the application from the device home screen does not return
-                            // to the external activity.
-                            Intent externalActivityIntent = new Intent(Intent.ACTION_PICK);
-                            externalActivityIntent.setType("image/*");
-                            externalActivityIntent.addFlags(
-                                    Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-                            startActivity(externalActivityIntent);
-                        }
-                    });
-
-            return rootView;
-        }
-    }
-
-    /**
-     * A dummy fragment representing a section of the app, but that simply displays dummy text.
-     */
-    public static class DummySectionFragment extends Fragment {
-
-        public static final String ARG_SECTION_NUMBER = "section_number";
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_section_dummy, container, false);
-            Bundle args = getArguments();
-            ((TextView) rootView.findViewById(android.R.id.text1)).setText(
-                    getString(R.string.dummy_section_text, args.getInt(ARG_SECTION_NUMBER)));
-            return rootView;
-        }
-    }
-
-    public static class WhatsnewSectionFragment extends Fragment {
-
-        public static final String ARG_SECTION_NUMBER = "section_number";
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_whatsnew, container, false);
-            Bundle args = getArguments();
-            ImageView imageView = (ImageView) rootView.findViewById(R.id.imageView1);
-    		imageView.setImageResource(R.drawable.promo1);
-
-            return rootView;
-        }
-    }
-
-    public static class RecommendationsSectionFragment extends Fragment {
-
-        public static final String ARG_SECTION_NUMBER = "section_number";
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_recommendations, container, false);
-            Bundle args = getArguments();
-            ImageView imageView = (ImageView) rootView.findViewById(R.id.imageView1);
-    		imageView.setImageResource(R.drawable.reco1);
-
-            return rootView;
-        }
-    }
-
-
-
+    
 }
