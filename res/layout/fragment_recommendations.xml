@@ -37,9 +37,7 @@
             android:layout_width="fill_parent"
             android:layout_height="150dp"
             android:layout_margin="5dp"
-            android:background="#fff"
             android:padding="3dp"
-            android:scaleType="fitXY"
             android:src="@drawable/reco2" />
 
         <ImageView
@@ -47,12 +45,10 @@
             android:layout_width="fill_parent"
             android:layout_height="200dp"
             android:layout_margin="5dp"
-            android:background="#fff"
             android:paddingBottom="50dp"
             android:paddingLeft="3dp"
             android:paddingRight="3dp"
             android:paddingTop="3dp"
-            android:scaleType="fitXY"
             android:src="@drawable/reco3" />
     </LinearLayout>
 

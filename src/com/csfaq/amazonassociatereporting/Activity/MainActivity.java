@@ -135,26 +135,17 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 				return new HomeFragment();
 
 			case 1:
-				fragment = new RecommendationsFragment();
-				args = new Bundle();
-				args.putInt(DidYouKnowFragment.ARG_SECTION_NUMBER, i + 1);
-				fragment.setArguments(args);
-				return fragment;
+				return new RecommendationsFragment();
 
 			case 2:
-				fragment = new WhatsNewFragment();
-				args = new Bundle();
-				args.putInt(DidYouKnowFragment.ARG_SECTION_NUMBER, i + 1);
-				fragment.setArguments(args);
-				return fragment;
+				return new WhatsNewFragment();
 
-			default:
+			case 3:
 				// The other sections of the app are dummy placeholders.
-				fragment = new DidYouKnowFragment();
-				args = new Bundle();
-				args.putInt(DidYouKnowFragment.ARG_SECTION_NUMBER, i + 1);
-				fragment.setArguments(args);
-				return fragment;
+				return new DidYouKnowFragment();
+				
+			default:
+				return null;
 			}
 		}
 
