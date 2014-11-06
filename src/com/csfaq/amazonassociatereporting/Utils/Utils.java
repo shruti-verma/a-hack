@@ -12,9 +12,6 @@ import com.csfaq.amazonassociatereporting.R;
 
 import java.util.Random;
 
-/**
- * Created by abrao on 11/5/2014.
- */
 public class Utils {
 
     public static int randInt(int min, int max) {
