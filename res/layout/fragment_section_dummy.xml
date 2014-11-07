@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
-            android:text="Put question 1 here"
+            android:text="Would you be interested in beta for associates android SDK?"
             android:textSize="18dp" />
 
         <!-- Options -->
@@ -68,7 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
-            android:text="Put question 2 here"
+            android:text="Would you prefer shortlinks with tracking parameters hidden over long links?"
             android:textSize="18dp" />
 
         <!-- Options -->
@@ -118,7 +118,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
-            android:text="Put question 3 here"
+            android:text="Are you satisfied with Amazon Associates program?"
             android:textSize="18dp" />
 
         <!-- Options -->

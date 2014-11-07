@@ -150,7 +150,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 
 		@Override
 		public CharSequence getPageTitle(int position) {
-			String[] tabs = new String[] {"Summary", "Recommendation", "What's new", "Did you know"};
+			String[] tabs = new String[] {"Summary", "Recommendation", "What's new", "Survey"};
 
 			return tabs[position];
 		}
