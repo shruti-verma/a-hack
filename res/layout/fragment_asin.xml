@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginBottom="10dp"
-        android:text="Find below your daily traffic stats by Asin"
+        android:text="Find below your daily traffic stats by top asins"
         android:textColor="#666666"
         android:textSize="20sp" />
 
@@ -31,7 +31,7 @@
             <TextView
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="Asin1"
+                android:text="B004F0BD2K | Kindle Fire HD"
                 android:textColor="#666666"
                 android:textSize="20sp" />
 
@@ -60,7 +60,7 @@
             <TextView
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="Asin2"
+                android:text="B004F0B6GH | Amazon Echo"
                 android:textColor="#666666"
                 android:textSize="20sp" />
 
@@ -75,7 +75,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_down_red" />
+                android:src="@drawable/ic_up_green" />
         </LinearLayout>
     </LinearLayout>
 

@@ -31,7 +31,7 @@
             <TextView
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="Link1"
+                android:text="www.amazon.com/gp/prime/signup/videos"
                 android:textColor="#666666"
                 android:textSize="20sp" />
 
@@ -60,7 +60,7 @@
             <TextView
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="Link2"
+                android:text="www.amazon.com//b//?ie=UTF8&amp;node=283155"
                 android:textColor="#666666"
                 android:textSize="20sp" />
 
@@ -75,7 +75,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_down_red" />
+                android:src="@drawable/ic_up_green" />
         </LinearLayout>
     </LinearLayout>
 

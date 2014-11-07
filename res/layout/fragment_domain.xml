@@ -31,7 +31,7 @@
             <TextView
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="Domain1"
+                android:text="shopsave.us"
                 android:textColor="#666666"
                 android:textSize="20sp" />
 
@@ -39,7 +39,7 @@
                 android:id="@+id/tv_domain1"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:text="800"
+                android:text="8000"
                 android:textColor="#666666"
                 android:textSize="20sp" />
 
@@ -60,7 +60,7 @@
             <TextView
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="Domain2"
+                android:text="homegarden.io"
                 android:textColor="#666666"
                 android:textSize="20sp" />
 
@@ -68,7 +68,7 @@
                 android:id="@+id/tv_domain2"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:text="200"
+                android:text="2000"
                 android:textColor="#666666"
                 android:textSize="20sp" />
 

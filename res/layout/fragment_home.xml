@@ -39,7 +39,7 @@
                 android:id="@+id/tv_clicks"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:text="1000"
+                android:text="789109"
                 android:textColor="#666666"
                 android:textSize="20sp" />
 
@@ -68,7 +68,7 @@
                 android:id="@+id/tv_ops"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:text="200 $"
+                android:text="19726$"
                 android:textColor="#666666"
                 android:textSize="20sp" />
 
@@ -97,7 +97,7 @@
                 android:id="@+id/tv_units"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:text="50"
+                android:text="7501"
                 android:textColor="#666666"
                 android:textSize="20sp" />
 
