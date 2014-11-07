@@ -24,40 +24,78 @@ public final class R {
     }
     public static final class drawable {
         public static final int amazon_associate_logo=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int promo=0x7f020002;
-        public static final int promo1=0x7f020003;
-        public static final int promo2=0x7f020004;
-        public static final int promo3=0x7f020005;
-        public static final int promo4=0x7f020006;
-        public static final int promo5=0x7f020007;
-        public static final int promo6=0x7f020008;
-        public static final int promo7=0x7f020009;
-        public static final int reco1=0x7f02000a;
-        public static final int reco2=0x7f02000b;
-        public static final int reco3=0x7f02000c;
+        public static final int ic_down_red=0x7f020001;
+        public static final int ic_launcher=0x7f020002;
+        public static final int ic_up_green=0x7f020003;
+        public static final int ic_up_green1=0x7f020004;
+        public static final int promo=0x7f020005;
+        public static final int promo1=0x7f020006;
+        public static final int promo2=0x7f020007;
+        public static final int promo3=0x7f020008;
+        public static final int promo5=0x7f020009;
+        public static final int promo6=0x7f02000a;
+        public static final int reco3=0x7f02000b;
+        public static final int reco_1=0x7f02000c;
+        public static final int reco_2=0x7f02000d;
+        public static final int reco_3=0x7f02000e;
+        public static final int reco_4=0x7f02000f;
+        public static final int reco_5=0x7f020010;
+        public static final int whats_new_1=0x7f020011;
+        public static final int whats_new_2=0x7f020012;
+        public static final int whats_new_3=0x7f020013;
+        public static final int whats_new_4=0x7f020014;
+        public static final int whats_new_5=0x7f020015;
     }
     public static final class id {
-        public static final int demo_collection_button=0x7f080006;
-        public static final int demo_external_activity=0x7f080007;
-        public static final int imageView1=0x7f080003;
-        public static final int imageView2=0x7f080004;
-        public static final int imageView3=0x7f080005;
+        public static final int demo_collection_button=0x7f080017;
+        public static final int demo_external_activity=0x7f080018;
+        public static final int imageView1=0x7f08000e;
+        public static final int imageView2=0x7f080010;
+        public static final int imageView3=0x7f080012;
+        public static final int imageView4=0x7f080014;
+        public static final int imageView5=0x7f080016;
         public static final int imgLogo=0x7f080002;
+        public static final int linearlayout1=0x7f08000d;
+        public static final int linearlayout2=0x7f08000f;
+        public static final int linearlayout3=0x7f080011;
+        public static final int linearlayout4=0x7f080013;
+        public static final int linearlayout5=0x7f080015;
         public static final int pager=0x7f080000;
         public static final int pager_title_strip=0x7f080001;
-        public static final int textView1=0x7f080008;
+        public static final int textView1=0x7f080020;
+        public static final int tv_asin1=0x7f080004;
+        public static final int tv_asin2=0x7f080005;
+        public static final int tv_clicks=0x7f080008;
+        public static final int tv_domain1=0x7f080006;
+        public static final int tv_domain2=0x7f080007;
+        public static final int tv_link1=0x7f08000b;
+        public static final int tv_link2=0x7f08000c;
+        public static final int tv_ops=0x7f080009;
+        public static final int tv_tag1=0x7f080019;
+        public static final int tv_tag2=0x7f08001a;
+        public static final int tv_top_header=0x7f080003;
+        public static final int tv_units=0x7f08000a;
+        public static final int whats_new_linearlayout1=0x7f08001b;
+        public static final int whats_new_linearlayout2=0x7f08001c;
+        public static final int whats_new_linearlayout3=0x7f08001d;
+        public static final int whats_new_linearlayout4=0x7f08001e;
+        public static final int whats_new_linearlayout5=0x7f08001f;
     }
     public static final class layout {
         public static final int activity_collection_demo=0x7f030000;
         public static final int activity_main=0x7f030001;
         public static final int activity_splash=0x7f030002;
-        public static final int fragment_collection_object=0x7f030003;
-        public static final int fragment_recommendations=0x7f030004;
-        public static final int fragment_section_dummy=0x7f030005;
-        public static final int fragment_section_launchpad=0x7f030006;
-        public static final int fragment_whatsnew=0x7f030007;
-        public static final int result=0x7f030008;
+        public static final int fragment_asin=0x7f030003;
+        public static final int fragment_collection_object=0x7f030004;
+        public static final int fragment_domain=0x7f030005;
+        public static final int fragment_home=0x7f030006;
+        public static final int fragment_link=0x7f030007;
+        public static final int fragment_recommendations=0x7f030008;
+        public static final int fragment_section_dummy=0x7f030009;
+        public static final int fragment_section_launchpad=0x7f03000a;
+        public static final int fragment_tag=0x7f03000b;
+        public static final int fragment_whatsnew=0x7f03000c;
+        public static final int result=0x7f03000d;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
@@ -70,5 +108,6 @@ public final class R {
  Customize your theme here. 
          */
         public static final int AppTheme=0x7f070000;
+        public static final int DescriptionStyle=0x7f070001;
     }
 }
