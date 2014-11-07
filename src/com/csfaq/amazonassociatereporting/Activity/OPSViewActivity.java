@@ -13,7 +13,7 @@ import android.support.v4.view.ViewPager;
 import com.csfaq.amazonassociatereporting.R;
 import com.csfaq.amazonassociatereporting.Utils.Utils;
 
-public class ClickViewActivity extends FragmentActivity implements ActionBar.TabListener {
+public class OPSViewActivity extends FragmentActivity implements ActionBar.TabListener {
 
 	/**
 	 * The {@link android.support.v4.view.PagerAdapter} that will provide fragments for each of the
@@ -22,7 +22,6 @@ public class ClickViewActivity extends FragmentActivity implements ActionBar.Tab
 	 * intensive, it may be best to switch to a {@link android.support.v4.app.FragmentStatePagerAdapter}.
 	 */
 	AppSectionsPagerAdapter mAppSectionsPagerAdapter;
-	static String mType;
 
 	/**
 	 * The {@link ViewPager} that will display the three primary sections of the app, one at a
@@ -33,11 +32,6 @@ public class ClickViewActivity extends FragmentActivity implements ActionBar.Tab
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
-		Bundle extras = getIntent().getExtras();
-		if (extras != null) {
-			mType = extras.getString("DATA");
-		}
 
 		// Create the adapter that will return a fragment for each of the three primary sections
 		// of the app.
@@ -112,17 +106,17 @@ public class ClickViewActivity extends FragmentActivity implements ActionBar.Tab
 			case 0:
 				// The first section of the app is the most interesting -- it offers
 				// a launchpad into the other demonstrations in this example application.
-				return new DomainFragment(mType);
+				return new DomainFragment();
 
 			case 1:
-				return new AsinFragment(mType);
+				return new AsinFragment();
 
 			case 2:
-				return new LinkFragment(mType);
+				return new LinkFragment();
 
 			case 3:
 				// The other sections of the app are dummy placeholders.
-				return new TagFragment(mType);
+				return new TagFragment();
 				
 			default:
 				return null;

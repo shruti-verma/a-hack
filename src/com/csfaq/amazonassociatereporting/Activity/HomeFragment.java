@@ -27,38 +27,38 @@ public class HomeFragment extends Fragment {
 	}
 	
 	private void setClicks() {
-		final TextView tvUnits = (TextView) rootView.findViewById(R.id.tv_units);
-		final TextView tvOps = (TextView) rootView.findViewById(R.id.tv_ops);
 		final TextView tvClicks = (TextView) rootView.findViewById(R.id.tv_clicks);
+		final TextView tvOps = (TextView) rootView.findViewById(R.id.tv_ops);
+		final TextView tvUnits = (TextView) rootView.findViewById(R.id.tv_units);
 
-
-		tvUnits.setOnClickListener(new OnClickListener() {
+		tvClicks.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
 				Intent intent = new Intent(getActivity(), ClickViewActivity.class);
 				intent.putExtra("DATA", "CLICKS");
 				startActivity(intent);			}
+			    
 		});
-		
 		
 		tvOps.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
-			    startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse("http://associates.amazon.com")));				
-			}
+				Intent intent = new Intent(getActivity(), ClickViewActivity.class);
+				intent.putExtra("DATA", "OPS");
+				startActivity(intent);			}
+			
 		});
-		
-		
-		tvClicks.setOnClickListener(new OnClickListener() {
+
+		tvUnits.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
-			    startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse("http://associates.amazon.com")));				
-			}
-		});
-		
+				Intent intent = new Intent(getActivity(), ClickViewActivity.class);
+				intent.putExtra("DATA", "UNITS");
+				startActivity(intent);			}
+		});		
 
 	}
 

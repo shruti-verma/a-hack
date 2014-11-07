@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginBottom="10dp"
-        android:text="Find below your daily traffic stats"
+        android:text="Find below your daily traffic stats by domain"
         android:textColor="#666666"
         android:textSize="20sp" />
 
@@ -20,7 +20,7 @@
         android:layout_below="@id/tv_top_header"
         android:orientation="vertical" >
 
-        <!-- clicks -->
+        <!-- Domain1 -->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,15 +31,15 @@
             <TextView
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="Clicks"
+                android:text="Domain1"
                 android:textColor="#666666"
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/tv_clicks"
+                android:id="@+id/tv_domain1"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:text="1000"
+                android:text="800"
                 android:textColor="#666666"
                 android:textSize="20sp" />
 
@@ -49,7 +49,7 @@
                 android:src="@drawable/ic_up_green" />
         </LinearLayout>
 
-        <!-- OPS -->
+        <!-- Domain2 -->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -60,44 +60,15 @@
             <TextView
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="Ordered OPS"
+                android:text="Domain2"
                 android:textColor="#666666"
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/tv_ops"
+                android:id="@+id/tv_domain2"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:text="200 $"
-                android:textColor="#666666"
-                android:textSize="20sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_down_red" />
-        </LinearLayout>
-
-        <!-- Ordered units -->
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:padding="10dp" >
-
-            <TextView
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="Ordered Units"
-                android:textColor="#666666"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/tv_units"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:text="50"
+                android:text="200"
                 android:textColor="#666666"
                 android:textSize="20sp" />
 
