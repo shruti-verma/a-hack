@@ -3,46 +3,63 @@ package com.csfaq.amazonassociatereporting.Activity;
 import com.csfaq.amazonassociatereporting.R;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.View.OnClickListener;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class HomeFragment extends Fragment {
+	
+	private View rootView;
 
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
-		View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+		
+		rootView = inflater.inflate(R.layout.fragment_home, container, false);
 
-		// Demonstration of a collection-browsing activity.
-		rootView.findViewById(R.id.demo_collection_button)
-		.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View view) {
-				Intent intent = new Intent(getActivity(), CollectionDemoActivity.class);
-				startActivity(intent);
-			}
-		});
-
-		// Demonstration of navigating to external activities.
-		rootView.findViewById(R.id.demo_external_activity)
-		.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View view) {
-				// Create an intent that asks the user to pick a photo, but using
-				// FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET, ensures that relaunching
-				// the application from the device home screen does not return
-				// to the external activity.
-				Intent externalActivityIntent = new Intent(Intent.ACTION_PICK);
-				externalActivityIntent.setType("image/*");
-				externalActivityIntent.addFlags(
-						Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-				startActivity(externalActivityIntent);
-			}
-		});
-
+		setClicks();
+		
 		return rootView;
+	}
+	
+	private void setClicks() {
+		final TextView tvUnits = (TextView) rootView.findViewById(R.id.tv_units);
+		final TextView tvOps = (TextView) rootView.findViewById(R.id.tv_ops);
+		final TextView tvClicks = (TextView) rootView.findViewById(R.id.tv_clicks);
+
+
+		tvUnits.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(getActivity(), ClickViewActivity.class);
+				intent.putExtra("DATA", "CLICKS");
+				startActivity(intent);			}
+		});
+		
+		
+		tvOps.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+			    startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse("http://associates.amazon.com")));				
+			}
+		});
+		
+		
+		tvClicks.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+			    startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse("http://associates.amazon.com")));				
+			}
+		});
+		
+
 	}
 
 }

@@ -1,39 +1,111 @@
-<!--
-  Copyright 2012 The Android Open Source Project
-  
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-  
-      http://www.apache.org/licenses/LICENSE-2.0
-  
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-  -->
-
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#FFFFFF" >
 
-    <LinearLayout android:orientation="vertical"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/tv_top_header"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center">
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:text="Find below your daily traffic stats"
+        android:textColor="#666666"
+        android:textSize="20sp" />
 
-        <Button android:id="@+id/demo_collection_button"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="@string/demo_collection"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_top_header"
+        android:orientation="vertical" >
 
-        <Button android:id="@+id/demo_external_activity"
+        <!-- clicks -->
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/demo_external_activity" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp" >
 
+            <TextView
+                android:id="@+id/tv_clicks"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Clicks"
+                android:textColor="#666666"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:textColor="#666666"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_up_green" />
+        </LinearLayout>
+
+        <!-- OPS -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_ops"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Ordered OPS"
+                android:textColor="#666666"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="200 $"
+                android:textColor="#666666"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_down_red" />
+        </LinearLayout>
+
+        <!-- Ordered units -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Ordered Units"
+                android:textColor="#666666"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_units"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:textColor="#666666"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_down_red" />
+        </LinearLayout>
     </LinearLayout>
 
-</FrameLayout>
+</RelativeLayout>

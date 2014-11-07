@@ -13,7 +13,7 @@ import android.support.v4.view.ViewPager;
 import com.csfaq.amazonassociatereporting.R;
 import com.csfaq.amazonassociatereporting.Utils.Utils;
 
-public class MainActivity extends FragmentActivity implements ActionBar.TabListener {
+public class ClickViewActivity extends FragmentActivity implements ActionBar.TabListener {
 
 	/**
 	 * The {@link android.support.v4.view.PagerAdapter} that will provide fragments for each of the
@@ -39,7 +39,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 			@Override
 			public void run() {
 				// This method will be executed once the timer is over
-				Utils.createNotification(MainActivity.this, null);
+				Utils.createNotification(ClickViewActivity.this, null);
 			}
 		}, Utils.randInt(1000, 1000));
 
