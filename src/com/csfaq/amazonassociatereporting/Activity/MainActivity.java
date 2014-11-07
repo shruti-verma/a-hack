@@ -39,9 +39,19 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 			@Override
 			public void run() {
 				// This method will be executed once the timer is over
-				Utils.createNotification(MainActivity.this, null);
+				Utils.createNotification(MainActivity.this, null, "earnings");
 			}
-		}, Utils.randInt(1000, 1000));
+		}, Utils.randInt(1000, 8000));
+		
+		// Post the notifications at a random time.
+		new Handler().postDelayed(new Runnable() {
+
+			@Override
+			public void run() {
+				// This method will be executed once the timer is over
+				Utils.createNotification(MainActivity.this, null, "ranking");
+			}
+		}, Utils.randInt(8000, 14000));
 
 		// Create the adapter that will return a fragment for each of the three primary sections
 		// of the app.
