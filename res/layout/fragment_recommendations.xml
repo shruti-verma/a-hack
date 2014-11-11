@@ -60,7 +60,6 @@
 
             <ImageView
                 android:id="@+id/shareImageView1"
-                android:tag="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
@@ -68,100 +67,249 @@
                 android:layout_toRightOf="@+id/imageView1"
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/ic_share" />
+                android:src="@drawable/ic_share"
+                android:tag="1" />
         </RelativeLayout>
 
         <!-- Reco 2 -->
 
-        <LinearLayout
+        <RelativeLayout
             android:id="@+id/linearlayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:layout_marginBottom="10dp" >
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
                 android:layout_margin="5dp"
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/reco_2" />
 
             <TextView
+                android:id="@+id/textView2"
                 style="@style/DescriptionStyle"
-                android:text="Specially crafted Thanksgiving banner ad to increase earnings from your food  blog!" />
-        </LinearLayout>
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView2"
+                android:text="Specially crafted Thanksgiving banner ad for your food  blog!" />
+
+            <RatingBar
+                android:id="@+id/ratingBar2"
+                style="@style/starRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/imageView2"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="3"
+                android:stepSize="1.0" />
+
+            <TextView
+                style="@style/DescriptionStyle"
+                android:layout_below="@+id/textView2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@+id/ratingBar2"
+                android:text="445 Ratings" />
+
+            <ImageView
+                android:id="@+id/shareImageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/imageView2"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_share"
+                android:tag="2" />
+        </RelativeLayout>
 
         <!-- Reco 3 -->
 
-        <LinearLayout
+        <RelativeLayout
             android:id="@+id/linearlayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:layout_marginBottom="10dp" >
 
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="left"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
                 android:layout_margin="5dp"
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/reco_3" />
 
             <TextView
+                android:id="@+id/textView3"
                 style="@style/DescriptionStyle"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView3"
                 android:text="Kindle Fire HD Tablet banner rightly suited for your Kindle blog" />
-        </LinearLayout>
+
+            <RatingBar
+                android:id="@+id/ratingBar3"
+                style="@style/starRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/imageView3"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="1.0" />
+
+            <TextView
+                style="@style/DescriptionStyle"
+                android:layout_below="@+id/textView3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@+id/ratingBar3"
+                android:text="2245 Ratings" />
+
+            <ImageView
+                android:id="@+id/shareImageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/imageView3"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_share"
+                android:tag="3" />
+        </RelativeLayout>
 
         <!-- Reco 4 -->
 
-        <LinearLayout
+        <RelativeLayout
             android:id="@+id/linearlayout4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:layout_marginBottom="10dp" >
 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
                 android:layout_margin="5dp"
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/reco_4" />
 
             <TextView
+                android:id="@+id/textView4"
                 style="@style/DescriptionStyle"
-                android:text="Maximize your earnings in Electronics category with our newly launched Electronics promotion banners" />
-        </LinearLayout>
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView4"
+                android:text="Newly launched Electronics promotion banners" />
+
+            <RatingBar
+                android:id="@+id/ratingBar4"
+                style="@style/starRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/imageView4"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="4"
+                android:stepSize="1.0" />
+
+            <TextView
+                style="@style/DescriptionStyle"
+                android:layout_below="@+id/textView4"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@+id/ratingBar4"
+                android:text="78 Ratings" />
+
+            <ImageView
+                android:id="@+id/shareImageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/imageView4"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_share"
+                android:tag="4" />
+        </RelativeLayout>
 
         <!-- Reco 5 -->
 
-        <LinearLayout
+        <RelativeLayout
             android:id="@+id/linearlayout5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:layout_marginBottom="10dp" >
 
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="left"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
                 android:layout_margin="5dp"
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/reco_5" />
 
             <TextView
+                android:id="@+id/textView5"
                 style="@style/DescriptionStyle"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView5"
                 android:text="Specially crafted contextual fashion widget for your fashion blog" />
-        </LinearLayout>
+
+            <RatingBar
+                android:id="@+id/ratingBar5"
+                style="@style/starRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/imageView5"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="1.0" />
+
+            <TextView
+                style="@style/DescriptionStyle"
+                android:layout_below="@+id/textView5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@+id/ratingBar5"
+                android:text="990 Ratings" />
+
+            <ImageView
+                android:id="@+id/shareImageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/imageView5"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_share"
+                android:tag="5" />
+        </RelativeLayout>
     </LinearLayout>
 
 </ScrollView>
