@@ -136,7 +136,13 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 
 			case 3:
 				// The other sections of the app are dummy placeholders.
+				return new InsightsFragment();
+				
+			case 4:
+				// The other sections of the app are dummy placeholders.
+				
 				return new DidYouKnowFragment();
+				
 				
 			default:
 				return null;
@@ -145,12 +151,12 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 
 		@Override
 		public int getCount() {
-			return 4;
+			return 5;
 		}
 
 		@Override
 		public CharSequence getPageTitle(int position) {
-			String[] tabs = new String[] {"Summary", "Recommendation", "What's new", "Survey"};
+			String[] tabs = new String[] {"Summary", "Recommendation", "What's new", "Insights","Survey" ,};
 
 			return tabs[position];
 		}
