@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.view.View;
 
 import com.csfaq.amazonassociatereporting.Activity.MainActivity;
-import com.csfaq.amazonassociatereporting.Activity.NotificationReceiverActivity;
 import com.csfaq.amazonassociatereporting.R;
 
 import java.util.Random;
