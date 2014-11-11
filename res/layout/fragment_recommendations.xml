@@ -11,26 +11,67 @@
         android:background="#FFFFFF"
         android:orientation="vertical" >
 
-        <LinearLayout
+        <!-- Reco 1 -->
+
+        <RelativeLayout
             android:id="@+id/linearlayout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:layout_marginBottom="10dp" >
 
             <ImageView
                 android:id="@+id/imageView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="left"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
                 android:layout_margin="5dp"
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/reco_1" />
 
             <TextView
+                android:id="@+id/textView1"
                 style="@style/DescriptionStyle"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView1"
                 android:text="Black Friday deals crafted specially for you!" />
-        </LinearLayout>
+
+            <RatingBar
+                android:id="@+id/ratingBar1"
+                style="@style/starRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/imageView1"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="4"
+                android:stepSize="1.0" />
+
+            <TextView
+                style="@style/DescriptionStyle"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@+id/ratingBar1"
+                android:text="556 Ratings" />
+
+            <ImageView
+                android:id="@+id/shareImageView1"
+                android:tag="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/imageView1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_share" />
+        </RelativeLayout>
+
+        <!-- Reco 2 -->
 
         <LinearLayout
             android:id="@+id/linearlayout2"
@@ -53,6 +94,8 @@
                 android:text="Specially crafted Thanksgiving banner ad to increase earnings from your food  blog!" />
         </LinearLayout>
 
+        <!-- Reco 3 -->
+
         <LinearLayout
             android:id="@+id/linearlayout3"
             android:layout_width="match_parent"
@@ -74,6 +117,8 @@
                 android:text="Kindle Fire HD Tablet banner rightly suited for your Kindle blog" />
         </LinearLayout>
 
+        <!-- Reco 4 -->
+
         <LinearLayout
             android:id="@+id/linearlayout4"
             android:layout_width="match_parent"
@@ -94,6 +139,8 @@
                 style="@style/DescriptionStyle"
                 android:text="Maximize your earnings in Electronics category with our newly launched Electronics promotion banners" />
         </LinearLayout>
+
+        <!-- Reco 5 -->
 
         <LinearLayout
             android:id="@+id/linearlayout5"
