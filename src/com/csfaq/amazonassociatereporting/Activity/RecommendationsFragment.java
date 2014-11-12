@@ -45,11 +45,11 @@ public class RecommendationsFragment extends Fragment {
 				String shareBody;
 
 				if (tag.equals("1")) {					
-					shareSubject = "subject1";
-					shareBody = "body1";
+					shareSubject = "Check out the new Black Friday promotions!";
+					shareBody = "Great Black Friday promotions on associate central \n https://affiliate-program.amazon.com/gp/associates/network/promo-hub/promo.html";
 				} else if (tag.equals("2")) {
-					shareSubject = "subject2";
-					shareBody = "body2";
+					shareSubject = "Checkout Thanksgiving deals!";
+					shareBody = "Dinner and Desserts Thanksgiving promotions now live on associate central";
 				} else if (tag.equals("3")) {
 					shareSubject = "subject3";
 					shareBody = "body3";
