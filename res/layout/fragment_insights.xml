@@ -1,0 +1,78 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/whats_new_linearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" >
+
+      
+            <TextView
+                style="@style/DescriptionStyle"
+                android:text="\u2022 Customers who are browsing your content are interested in the following products\n
+     \u2022Amazon Fire Phone\n
+     \u2022Fossil Watch"/>
+            
+          
+          
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/whats_new_linearlayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" 
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+<!--             <ImageView -->
+<!--                 android:id="@+id/imageView2" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_gravity="right" -->
+<!--                 android:layout_margin="5dp" -->
+<!--                 android:adjustViewBounds="true" -->
+<!--                 android:scaleType="centerCrop" -->
+<!--                 android:src="@drawable/whats_new_2" /> -->
+
+            <TextView
+                style="@style/DescriptionStyle"
+                android:text="\u2022 Associates who linked similar products on your blog also linked to the following products\n
+     \u2022Kindle Paperwhite\n
+     \u2022Fire HD 6 Tablet"/>
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/whats_new_linearlayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" 
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/DescriptionStyle"
+                android:text="\u2022 Try moving your Kenneth-Cole shoe ad above the fold on your fashion blog " />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
