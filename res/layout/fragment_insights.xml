@@ -16,21 +16,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
-            android:orientation="horizontal" >
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" >
 
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:layout_margin="5dp"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/whats_new_1" />
-
+      
             <TextView
                 style="@style/DescriptionStyle"
-                android:text="Introducing the Amazon CPM Ads ,exciting opportunity for you to earn on CPM basis " />
+                android:text="\u2022 Customers who are browsing your content are interested in the following products\n
+     \u2022Amazon Fire Phone\n
+     \u2022Fossil Watch"/>
+            
+          
+          
+            
         </LinearLayout>
 
         <LinearLayout
@@ -38,21 +37,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
-            android:orientation="horizontal" >
+            android:orientation="horizontal" 
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_margin="5dp"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/whats_new_2" />
+<!--             <ImageView -->
+<!--                 android:id="@+id/imageView2" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_gravity="right" -->
+<!--                 android:layout_margin="5dp" -->
+<!--                 android:adjustViewBounds="true" -->
+<!--                 android:scaleType="centerCrop" -->
+<!--                 android:src="@drawable/whats_new_2" /> -->
 
             <TextView
                 style="@style/DescriptionStyle"
-                android:text="Refer and earn fixed advertising fees when visitors sign-up for valuable services and programs." />
+                android:text="\u2022 Associates who linked similar products on your blog also linked to the following products\n
+     \u2022Kindle Paperwhite\n
+     \u2022Fire HD 6 Tablet"/>
+            />
         </LinearLayout>
 
         <LinearLayout
@@ -60,66 +64,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
-            android:orientation="horizontal" >
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:layout_margin="5dp"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/whats_new_3" />
+            android:orientation="horizontal" 
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
 
             <TextView
                 style="@style/DescriptionStyle"
-                android:text="You can earn $3 for visitors you get to sign up for Amazon Prime 30-Day Free Trials" />
+                android:text="\u2022 Try moving your Kenneth-Cole shoe ad above the fold on your fashion blog " />
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/whats_new_linearlayout4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:orientation="horizontal" >
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_margin="5dp"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/whats_new_4" />
-
-            <TextView
-                style="@style/DescriptionStyle"
-                android:text="Experience all new and improved interface for link building and reporting" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/whats_new_linearlayout5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:orientation="horizontal" >
-
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:layout_margin="5dp"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/whats_new_5" />
-
-            <TextView
-                style="@style/DescriptionStyle"
-                android:text="Get near real time reporting updates on your orders and earnings" />
-        </LinearLayout>
     </LinearLayout>
 
 </ScrollView>

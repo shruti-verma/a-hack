@@ -33,8 +33,6 @@ public class InsightsFragment extends Fragment {
 		final LinearLayout layout1 = (LinearLayout) rootView.findViewById(R.id.whats_new_linearlayout1);
 		final LinearLayout layout2 = (LinearLayout) rootView.findViewById(R.id.whats_new_linearlayout2);
 		final LinearLayout layout3 = (LinearLayout) rootView.findViewById(R.id.whats_new_linearlayout3);
-		final LinearLayout layout4 = (LinearLayout) rootView.findViewById(R.id.whats_new_linearlayout4);
-		final LinearLayout layout5 = (LinearLayout) rootView.findViewById(R.id.whats_new_linearlayout5);
 		
 		OnClickListener clickListener = new OnClickListener() {
 			
@@ -47,8 +45,6 @@ public class InsightsFragment extends Fragment {
 		layout1.setOnClickListener(clickListener);
 		layout2.setOnClickListener(clickListener);
 		layout3.setOnClickListener(clickListener);
-		layout4.setOnClickListener(clickListener);
-		layout5.setOnClickListener(clickListener);
 	}
 
 }
